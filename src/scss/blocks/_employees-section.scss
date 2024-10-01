@@ -1,0 +1,132 @@
+.employees-section {
+    width: 100%;
+    padding-block-end: var(--section-offset);
+    &__container {}
+
+    // .employees-section__headWrapper
+
+    &__headWrapper {
+        width: 100%;
+    }
+
+    // .employees-section__contextWrapper
+
+    &__contextWrapper {
+        width: 100%;
+    }
+
+    // .employees-section__title
+
+    &__title {
+        @include headingSection;
+        margin-bottom: 2.25rem;
+    }
+
+    // .employees-section__list
+
+    &__list {
+        width: 100%;
+    }
+
+    // .employees-section__list-item
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+            .employees-section__list-card {
+                border-bottom: 1px solid var(--color-border-secondary);
+            }
+        }
+    }
+
+    // .employees-section__list-card
+
+    &__list-card {
+        width: 100%;
+    }
+
+    // .employees-section__list-cardWrapper
+
+    &__list-cardWrapper {
+        padding-block-end: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    // .employees-section__list-cardImg
+
+    &__list-cardImg {
+        width: 12.25rem;
+        height: 16.25rem;
+        object-fit: cover;
+        object-position: center;
+        border-radius: var(--rounded-md);
+        background-color: var(--color-border-secondary);
+        @include mobile {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    // .employees-section__list-cardInfo
+
+    &__list-cardInfo {
+        width: auto;
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    // .employees-section__list-cardName
+
+    &__list-cardName {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-heading);
+    }
+
+    // .employees-section__list-cardPosition
+
+    &__list-cardPosition {
+        margin-block-start: 1rem;
+        color: var(--color-heading);
+        font-size: 15px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    // .employees-section__list-cardDetails
+
+    &__list-cardDetails {
+        margin-block-start: 1rem;
+        width: 100%;
+    }
+
+    // .employees-section__list-cardDetail
+
+    &__list-cardDetail {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &:not(:last-child) {
+            margin-block-end: 0.5rem;
+        }
+    }
+
+    // .employees-section__list-cardDetail-name
+
+    &__list-cardDetail-name {
+        flex: 1;
+    }
+
+    // .employees-section__list-cardDetail-value
+
+    &__list-cardDetail-value {
+        flex: 2;
+    }
+}

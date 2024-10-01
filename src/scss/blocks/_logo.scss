@@ -1,0 +1,26 @@
+.logo {
+    // .logo__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    // .logo__icon
+
+    &__icon {
+        --size: 96px;
+        width: var(--size);
+        height: var(--size);
+        object-fit: contain;
+    }
+
+    // .logo__text
+
+    &__text {
+        max-width: 160px;
+        font-weight: 500;
+        color: var(--color-muted);
+    }
+}

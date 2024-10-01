@@ -1,0 +1,35 @@
+ @mixin desktop {
+   @media (min-width: (1440px)) {
+     @content;
+   }
+ }
+
+
+ @mixin tablet {
+   @media (max-width: (1024px)) {
+     @content;
+   }
+ }
+
+ @mixin small-tablet {
+   @media (max-width: (768px)) {
+     @content;
+   }
+ }
+
+ @mixin mobile {
+   @media (max-width: (576px)) {
+     @content;
+   }
+ }
+
+
+ @mixin headingSection {
+   font-size: 2.25rem;
+   font-weight: 600;
+   text-align: left;
+   color: var(--color-heading);
+   @include mobile {
+     font-size: 1.5rem;
+   }
+ }

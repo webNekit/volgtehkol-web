@@ -1,0 +1,43 @@
+:root {
+	// container var
+	--container-width: 1200px;
+	--container-padding: 15px;
+	// fonts var
+	--font-main: sans-serif;
+	--font-primary: 'Inter', sans-serif;
+	--font-accent: 'Manrope', sans-serif;
+	--font-titles: var(--font-accent);
+	// colors var
+	--color-background: #ffffff;
+	--color-background-secondary: #f3f4f6;
+	--color-foreground: #F0FDF4;
+	--color-border: #dcfce7;
+	--color-border-secondary: #e7e5e4;
+	--color-primary: #16a34a;
+	--color-primary-hover: #158f42;
+	--color-muted: #9ca3af;
+	--color-destructive: #78716c;
+	--color-black: #030712;
+	--color-black-secondary: #1A1D27;
+	// global base var 
+	--color-heading: var(--color-black);
+	--color-text: var(--color-destructive);
+	--color-span: var(--color-muted);
+	--bg-app: var(--color-background-secondary);
+	// rounded var
+	--rounded-sm: 4px;
+	--rounded-md: 8px;
+	--rounded-lg: 12px;
+	--rounded-xl: 16px;
+	// screen var
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+
+	--section-offset: 3.25rem;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

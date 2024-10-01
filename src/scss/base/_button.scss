@@ -1,0 +1,26 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border-radius: var(--rounded-sm);
+    padding: 12px 16px;
+    font-weight: 500;
+    &--primary {
+        color: #fff;
+        background-color: var(--color-primary);
+        transition: background 200ms ease-in-out;
+        &:hover {
+            background-color: var(--color-primary-hover);
+        }
+    }
+    &--icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        i {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
