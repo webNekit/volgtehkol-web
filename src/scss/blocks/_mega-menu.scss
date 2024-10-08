@@ -1,6 +1,6 @@
 .mega-menu {
     position: fixed;
-    top: -100%;
+    top: -1000%;
     right: 0;
     left: 0;
     bottom: 0;
@@ -8,8 +8,9 @@
     height: 100vh;
     z-index: 30;
     background-color: var(--color-background);
-    transition: all 300ms ease-in;
+    transition: all .4s;
     transform-origin: top center;
+    overflow-y: scroll;
     &.is-active {
         top: 0;
     }
@@ -111,6 +112,8 @@
         transition: color 200ms ease-in-out;
         &:hover {
             color: var(--color-primary);
+            text-decoration: underline;
+            text-underline-offset: 0.1875rem;
         }
     }
 

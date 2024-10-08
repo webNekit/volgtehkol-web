@@ -60,6 +60,10 @@
         width: 100%;
         display: flex;
         align-items: flex-start;
+        @include mobile {
+            row-gap: 1rem;
+            flex-direction: column;
+        }
     }
 
     // .basic-information__card-value
@@ -83,5 +87,8 @@
         font-size: 1.125rem;
         font-weight: 400;
         margin-block-end: 1.5rem;
+        @include mobile {
+            font-size: 1rem;
+        }
     }
 }

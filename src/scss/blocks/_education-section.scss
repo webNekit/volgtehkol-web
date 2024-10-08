@@ -1,0 +1,75 @@
+.education-section {
+    width: 100%;
+    padding-block-end: var(--section-offset);
+    &__container {}
+
+    // .education-section__headWrapper
+
+    &__headWrapper {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    // .education-section__contextWrapper
+
+    &__contextWrapper {
+        width: 100%;
+    }
+
+    // .education-section__title
+
+    &__title {
+        @include headingSection;
+        margin-bottom: 2.25rem;
+    }
+
+    // .education-section__list
+
+    &__list {
+        width: 100%;
+    }
+
+    // .education-section__item
+
+    &__item {
+        width: 100%;
+        &:first-child { 
+            .education-section__card {
+                border-top: 1px solid var(--color-border-secondary);
+            }
+        }
+    }
+
+    // .education-section__card
+
+    &__card {
+        width: 100%;
+        border-bottom: 1px solid var(--color-border-secondary);
+    }
+
+    // .education-section__card-link
+
+    &__card-link {
+        width: 100%;
+        color: var(--color-heading);
+        transition: color 200ms linear, background 200ms linear;
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    // .education-section__card-wrapper
+
+    &__card-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 1.5rem;
+        padding-inline-end: 2rem;
+    }
+
+    // .education-section__card-title
+
+    &__card-title {}
+}
