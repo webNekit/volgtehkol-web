@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Главная страница | ВолгТехКол</title>
+	<link rel="stylesheet" href="./css/main.css" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+<body class="website-content">
+	<div class="website-content__page">
+		@@include('blocks/header.html')
+		<main class="main" id="main">
+			<div class="main__container" id="main-container">
+				@@include('blocks/content-section.html')
+			</div>
+		</main>
+		@@include('blocks/overlay.html')
+		@@include('blocks/modal-search.html')
+		@@include('blocks/loader.html')
+		<!-- buttons -->
+		<button class="website-content__button-up button-up" id="button-up">
+			<i class="ri-arrow-up-line"></i>
+		</button>
+		@@include('blocks/footer.html')
+	</div>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
