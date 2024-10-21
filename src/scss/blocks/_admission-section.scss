@@ -1,0 +1,105 @@
+.admission-section {
+    width: 100%;
+    padding-block-end: var(--section-offset);
+    &__container {
+    }
+
+    // .admission-section__headWrapper
+
+    &__headWrapper {
+        width: 100%;
+    }
+
+    // .admission-section__contextWrapper
+
+    &__contextWrapper {
+        width: 100%;
+        padding: 1.5rem 1.5rem;
+        border-radius: var(--rounded-md);
+        background-color: var(--color-background-secondary);
+        & > *:not(:last-child) {
+            margin-block-end: 1.125rem;
+        }
+    }
+
+    // .admission-section__title
+
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: left;
+        color: var(--color-heading);
+    }
+
+    // .admission-section__content
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        @include mobile {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    // .admission-section__content-inner
+
+    &__content-inner {
+        flex: 2;
+        &:has(p, ul, ol) {
+            font-size: 16px;
+            line-height: 1.35;
+            text-align: left;
+            color: var(--color-heading);
+        }
+
+        & > *:not(:last-child) {
+            margin-block-end: 1.125rem;
+        }
+
+        & > ul {
+            padding-inline: 1.5rem;
+        }
+    }
+
+    // .admission-section__contacts
+
+    &__contacts {
+        flex: 1;
+    }
+
+    &__contacts-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-heading);
+        margin-block-end: 0.875rem;
+    }
+
+    &__contacts-list {
+        width: 100%;
+    }
+
+    // .admission-section__contacts-item
+
+    &__contacts-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    // .admission-section__contacts-tel
+
+    &__contacts-tel {
+        color: var(--color-heading);
+        text-decoration: underline !important;
+        text-underline-offset: 8px;
+        opacity: 1;
+        transition: opacity .2s;
+        &:is(:hover, :focus) {
+            opacity: .6;
+        }
+    }
+}
