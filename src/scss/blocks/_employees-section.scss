@@ -1,6 +1,9 @@
 .employees-section {
     width: 100%;
     padding-block-end: var(--section-offset);
+    @include mobile {
+        padding-block-end: 0;
+    }
     &__container {}
 
     // .employees-section__headWrapper
