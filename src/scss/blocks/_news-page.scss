@@ -1,0 +1,109 @@
+.news-page {
+    width: 100%;
+    padding-block-end: var(--section-offset);
+    &__container {
+    }
+
+    // .news-page__headWrapper
+
+    &__headWrapper {
+        width: 100%;
+    }
+
+    // .news-page__context
+
+    &__context {
+        width: 100%;
+    }
+
+    // .news-page__list
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: repeat(3,1fr);
+        @include small-tablet {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    // .news-page__item
+
+    &__item {
+        width: 100%;
+        height: 100%;
+    }
+
+    // .news-page__card
+
+    &__card {
+    }
+}
+.news-card {
+    width: 100%;
+    height: 100%;
+    padding: 12px 12px;
+    border-radius: var(--rounded-md);
+    border: 1px solid var(--color-border-secondary);
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+    // .news-card__preview
+
+    &__preview {
+        width: 100%;
+        height: 320px;
+    }
+
+    // .news-card__preview-img
+
+    &__preview-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: var(--rounded-md);
+    }
+
+    // .news-card__name-post
+
+    &__name-post {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-heading);
+        transition: color 200ms;
+        &:is(:hover, :active) {
+            color: var(--color-primary);
+        }
+    }
+
+    // .news-card__link-post
+
+    &__link-post {
+    }
+
+    // .news-card__information
+
+    &__information {
+        margin-block-start: auto;
+        padding-block-start: 10px;
+    }
+
+    // .news-card__date
+
+    &__date {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
