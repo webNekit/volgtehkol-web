@@ -1,6 +1,12 @@
 .reports-page {
     width: 100%;
     padding-block-end: var(--section-offset);
+    .reports__calendar-info {
+        width: 100%;
+    }
+    .reports__calendar-list {
+        padding: 0;
+    }
     &__container {
     }
 
