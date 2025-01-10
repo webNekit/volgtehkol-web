@@ -8,6 +8,7 @@
     <title>Главная страница | ВолгТехКол</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
 </head>
@@ -50,7 +51,10 @@
                 <div class="header__center-logo logo">
                     <a href="./index.html" class="logo__link">
                         <img src="./img/favicons/logo.webp" alt="Логотип сайта ГБПОУ Волгоградский технический колледж" class="logo__icon">
-                        <span class="logo__text">Волгоградский технический колледж</span>
+                        <span class="logo__alt">
+                            <span class="logo__name">Волгоградский технический колледж</span>
+                            <span class="logo__slogan">Твой путь к&#160;успеху</span>
+                        </span>
                     </a>
                 </div>
                 <ul class="header__center-links">
@@ -312,66 +316,356 @@
                 <section class="main__section main__section--secondary specials"  id="specials">
     <div class="container specials__contaier">
         <div class="specials__headRow head-row">
-            <h3 class="head-row__title">Специальности</h3>
+            <h2 class="head-row__title">Специальности</h2>
             <a href="./education.html" class="head-row__moreLink">Все специальности <i class="ri-arrow-right-line"></i></a>
         </div>
-        <div class="specials__contentRow">
-            <ul class="specials__list">
-                <li class="specials__item">
+        <div class="specials__contentRow swiper swiper--special-1" id="slider-1">
+            <div class="specials__swiper-head">
+                <h3 class="specials__direction">Среднее профессиональное образование</h3>
+                <div class="specials__swiper-controls">
+                    <button class="specials__slider-btn specials__slider-btn--prev" id="special-btn-prev-1">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="specials__slider-btn specials__slider-btn--next" id="special-btn-next-1">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="specials__list swiper-wrapper">
+                <div class="specials__item swiper-slide">
                     <div class="specials__card">
                         <div class="specials__card-content">
                             <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
                             <a href="./single-special.html" class="specials__card-contentMoreLink">
-                                <h3 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h3>
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
                             </a>
                             <div class="specials__card-contentCode">
                                 <span class="specials__card-contentCodeSubtitle">Код специальности</span>
                                 <span class="specials__card-contentCodeValue">09.02.07</span>
                             </div>
                             <div class="specials__card-contentQualification">
-                                <span class="specials__card-contentQualificationSubtitle">Квалификация</span>
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
                                 <span class="specials__card-contentQualificationValue">Программист</span>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="specials__item">
+                </div>
+                <div class="specials__item swiper-slide">
                     <div class="specials__card">
                         <div class="specials__card-content">
                             <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
                             <a href="./single-special.html" class="specials__card-contentMoreLink">
-                                <h3 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h3>
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
                             </a>
                             <div class="specials__card-contentCode">
                                 <span class="specials__card-contentCodeSubtitle">Код специальности</span>
                                 <span class="specials__card-contentCodeValue">09.02.07</span>
                             </div>
                             <div class="specials__card-contentQualification">
-                                <span class="specials__card-contentQualificationSubtitle">Квалификация</span>
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
                                 <span class="specials__card-contentQualificationValue">Программист</span>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="specials__item">
+                </div>
+                <div class="specials__item swiper-slide">
                     <div class="specials__card">
                         <div class="specials__card-content">
                             <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
                             <a href="./single-special.html" class="specials__card-contentMoreLink">
-                                <h3 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h3>
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
                             </a>
                             <div class="specials__card-contentCode">
                                 <span class="specials__card-contentCodeSubtitle">Код специальности</span>
                                 <span class="specials__card-contentCodeValue">09.02.07</span>
                             </div>
                             <div class="specials__card-contentQualification">
-                                <span class="specials__card-contentQualificationSubtitle">Квалификация</span>
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
                                 <span class="specials__card-contentQualificationValue">Программист</span>
                             </div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specials__contentRow swiper swiper--special-2" id="slider-2">
+            <div class="specials__swiper-head">
+                <h3 class="specials__direction">Дополнительное профессиональное образование</h3>
+                <div class="specials__swiper-controls">
+                    <button class="specials__slider-btn specials__slider-btn--prev" id="special-btn-prev-2">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="specials__slider-btn specials__slider-btn--next" id="special-btn-next-2">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="specials__list swiper-wrapper">
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specials__contentRow swiper swiper--special-3" id="slider-3">
+            <div class="specials__swiper-head">
+                <h3 class="specials__direction">Профессиональное обучение</h3>
+                <div class="specials__swiper-controls">
+                    <button class="specials__slider-btn specials__slider-btn--prev" id="special-btn-prev-3">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="specials__slider-btn specials__slider-btn--next" id="special-btn-next-3">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="specials__list swiper-wrapper">
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specials__contentRow swiper swiper--special-4" id="slider-4">
+            <div class="specials__swiper-head">
+                <h3 class="specials__direction">Дополнительное образование детей и&#160;взрослых</h3>
+                <div class="specials__swiper-controls">
+                    <button class="specials__slider-btn specials__slider-btn--prev" id="special-btn-prev-4">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="specials__slider-btn specials__slider-btn--next" id="special-btn-next-4">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="specials__list swiper-wrapper">
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials__item swiper-slide">
+                    <div class="specials__card">
+                        <div class="specials__card-content">
+                            <div class="specials__card-contentFaculty">Кафедра&#160;&#8212; финансы</div>
+                            <a href="./single-special.html" class="specials__card-contentMoreLink">
+                                <h4 class="specials__card-contentTitle">Программирование в&#160;компьютерных системах</h4>
+                            </a>
+                            <div class="specials__card-contentCode">
+                                <span class="specials__card-contentCodeSubtitle">Код специальности</span>
+                                <span class="specials__card-contentCodeValue">09.02.07</span>
+                            </div>
+                            <div class="specials__card-contentQualification">
+                                <span class="specials__card-contentQualificationSubtitle">Специальность</span>
+                                <span class="specials__card-contentQualificationValue">Программист</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -383,12 +677,13 @@
 </div>
         <div class="news__contentRow">
             <ul class="news__list">
-                <li class="news__item">
-                    <article class="news__card">
+                <li class="news__item news__item--accent">
+                    <article class="news__card news__card--accent">
                         <a href="./page-content.html" class="news__card-moreLink">
                             <div class="news__card-postDate">15.04.2024&#160;г.</div>
                             <h3 class="news__card-postName">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
                         </a>
+                        <img loading="lazy" src="./img/news-img.jpg" alt="" class="news__card-img">
                     </article>
                 </li>
                 <li class="news__item">
@@ -410,14 +705,6 @@
                 <li class="news__item">
                     <article class="news__card">
                         <a href="#!" class="news__card-moreLink">
-                            <div class="news__card-postDate">15.04.2024&#160;г.</div>
-                            <h3 class="news__card-postName">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
-                        </a>
-                    </article>
-                </li>
-                <li class="news__item">
-                    <article class="news__card">
-                        <a href="./page-content.html" class="news__card-moreLink">
                             <div class="news__card-postDate">15.04.2024&#160;г.</div>
                             <h3 class="news__card-postName">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
                         </a>
@@ -733,6 +1020,7 @@
 </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.bundle.js"></script>
 </body>
 

@@ -6,21 +6,16 @@
 
     // .specials__contentRow
     &__contentRow {
-        width: 100%;
+        &:not(:last-child) {
+            margin-block-end: 52px;
+        }
     }
 
     // .specials__list
     &__list {
+        position: relative;
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3 ,minmax(0,1fr));
-        grid-gap: 16px;
-        @include small-tablet {
-            grid-template-columns: repeat(2 ,minmax(0,1fr));
-        }
-        @include mobile {
-            grid-template-columns: repeat(1 ,minmax(0,1fr));
-        }
+        margin-block-start: 32px;
     }
 
     // .specials__item
@@ -38,6 +33,32 @@
         border-radius: var(--rounded-sm);
         @include tablet {
             padding: 24px 24px;
+        }
+    }
+    &__direction {
+        font-size: 32px;
+        font-weight: 600;
+        color: var(--color-black);
+    }
+    &__swiper-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__slider-btn {
+        --size: 52px;
+        width: var(--size);
+        height: var(--size);
+        background-color: var(--color-background-secondary);
+        border: 1px solid var(--color-border-secondary);
+        border-radius: var(--radius);
+        font-size: 18px;
+        &--next {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+        &--prev {
+            color: var(--color-black);
         }
     }
 

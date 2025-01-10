@@ -22,5 +22,17 @@ phoneFormatter();
 
 import loader from './modules/loader.js';
 loader();
+
+import swiperSpecialInit from "./modules/specialSlider.js";
+swiperSpecialInit();
+
+import swiperSpecialInitTwo from "./modules/specialSlider2.js";
+swiperSpecialInitTwo();
+
+import swiperSpecialInitThree from "./modules/specialSlider3.js";
+swiperSpecialInitThree();
+
+import swiperSpecialInitFour from "./modules/specialSlider4.js";
+swiperSpecialInitFour();
 // import isAvifWebp from 'avif-webp-checker';
 // isAvifWebp({ mode: 'webp' });
